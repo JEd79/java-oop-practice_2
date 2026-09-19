@@ -2,7 +2,7 @@ public class PremiumCustomer extends Customer {
 
     private double discountRate;
 
-    public PremiumCustomer (String name, double discountRate) {
+    public PremiumCustomer(String name, double discountRate) {
         super(name);
         this.discountRate = discountRate;
     }
@@ -12,5 +12,7 @@ public class PremiumCustomer extends Customer {
     }
 
     @Override 
-    
+    public String getCustomerType() {
+        return "Premium";
+    }
 }

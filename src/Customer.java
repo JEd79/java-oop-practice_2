@@ -1,24 +1,27 @@
 public class Customer {
     private String name;
-    private static int customerId = 1000;
-    private static int customerCount = 0;
-    
+    private int customerId;
+    private static int customerCount;
+    private String customerType;
 
     public Customer(String name) {
         this.name = name;
-        this.customerCount++;
-        this.customerId++;
+        customerCount++;
     }
 
     public String getName() {
         return name;
     }
 
-    public static int getCustomerCount() {
+    public int getCustomerCount() {
         return customerCount;
     }
 
-    public static int getCustomerId() {
+    public String getCustomerType() {
+        return "Standard";
+    }
+
+    public int getCustomerId() {
         return customerId;
     }
 }
